@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-This repository contains coding developed at 42 Porto for ft_printf Project, from...
+This repository contains coding developed at 42 Porto for ft_printf Project, from ...
 
 
 ## :notebook: [Subject]() <br />
