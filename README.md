@@ -13,8 +13,8 @@
 <p align="center">
 This repository contains code developed at 42 Porto for ft_printf Project, from ...
 
-
-## :notebook: [Subject](https://github.com/lbordonal/02-ft_printf/blob/main/Subject/en.subject.pdf) <br />
-
-
-
+<h2 align="left">
+	 :notebook: Subject
+</h2>
+<a href="https://github.com/lbordonal/02-ft_printf/blob/main/Subject/en.subject.pdf">Click here</a> for the subject of this project.
+<br /><br />
