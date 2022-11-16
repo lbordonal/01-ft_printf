@@ -1,31 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/16 11:42:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/16 12:13:15 by lbordona         ###   ########.fr       */
+/*   Created: 2022/11/03 17:51:23 by lbordona          #+#    #+#             */
+/*   Updated: 2022/11/08 17:48:46 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "libft.h"
 
-# include <stdlib.h>
-# include <stdio.h>
-# include <unistd.h>
-# include <string.h>
-# include <strings.h>
-# include <stddef.h>
-# include <ctype.h>
-# include <stdarg.h>
-
-typedef struct s_list
+void	*ft_strrchr(const char *s, int c)
 {
-	void			*content;
-	struct s_list	*next;
-}					t_list;
+	char	*str;
 
-#endif
+	str = 0;
+	if (c == '\0')
+		return ((char *)s + ft_strlen(s));
+	while (*s)
+	{
+		if (*s == c)
+			str = ((char *)s);
+		s++;
+	}
+	return (str);
+}
+
+/* int		main(void)
+{
+	char str[] = "Lucas Henrique";
+	char	a;
+
+	a = 'u';
+	printf("%s", (char *)ft_strrchr(str, a));
+	printf("\n");
+	printf("%s", strrchr(str, a));
+	return (0);
+} */

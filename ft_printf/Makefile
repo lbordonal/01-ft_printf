@@ -1,40 +1,55 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    MAKEFILE                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: lbordona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/16 11:42:19 by lbordona          #+#    #+#              #
-#    Updated: 2022/11/16 11:42:51 by lbordona         ###   ########.fr        #
+#    Updated: 2022/11/16 12:13:14 by lbordona         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+#Variables:
+
 NAME = libftprintf.a
+LIBFT = libft
+CC = cc
+INCLUDE = include
+CFLAGS = -Wall -Wextra -Werror
+AR = ar rcs
+RM = rm -rf
+
+
+
+#Sources:
 
 SRC = *.c
 BONUS = *.c
 
-CC = cc
-RM = rm -rf
-CFLAG = -Wall -Wextra -Werror
-AR = ar rcs
-
 OBJ = $(SRC:%.c=%.o)
 BONUS_OBJ = $(BONUS:%.c=%.o)
+
+#Rules:
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
+		@make -C $(LIBFT)
+		@cp libft/libft.a
+		@mv libft.a $(NAME)
 		@$(AR) $(NAME) $(OBJ)
-
-bonus: $(OBJ) $(BONUS_OBJ)
-		@$(AR) $(NAME) $(BONUS_OBJ) $(OBJ)
+		@echo "FT_PRINTF - DONE"
 
 clean:
-		@$(RM) $(OBJ) $(BONUS_OBJ)
+		@$(RM) $(NAME)
+		@make clean -C $(LIBFT)
+		@echo "CLEAN - DONE"
 
 fclean: clean
 		@$(RM) $(NAME)
+		@$(RM) $(LIBFT)/libft.a
+		@echo "FCLEAN - DONE"
 
 re: fclean all
+		@echo "RE - DONE"

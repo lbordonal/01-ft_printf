@@ -1,31 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/16 11:42:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/16 12:13:15 by lbordona         ###   ########.fr       */
+/*   Created: 2022/11/09 01:22:42 by lbordona          #+#    #+#             */
+/*   Updated: 2022/11/09 16:09:18 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "libft.h"
 
-# include <stdlib.h>
-# include <stdio.h>
-# include <unistd.h>
-# include <string.h>
-# include <strings.h>
-# include <stddef.h>
-# include <ctype.h>
-# include <stdarg.h>
-
-typedef struct s_list
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	void			*content;
-	struct s_list	*next;
-}					t_list;
+	t_list	*new_list;
+	t_list	*new_node;
 
-#endif
+	if (!f || !del)
+		return (NULL);
+	new_list = NULL;
+	while (lst)
+	{
+		new_node = ft_lstnew(f(lst->content));
+		if (new_node == NULL)
+		{
+			ft_lstclear(&new_list, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&new_list, new_node);
+		lst = lst->next;
+	}
+	return (new_list);
+}

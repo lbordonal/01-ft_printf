@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/16 11:42:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/16 12:13:15 by lbordona         ###   ########.fr       */
+/*   Created: 2022/11/07 15:32:24 by lbordona          #+#    #+#             */
+/*   Updated: 2022/11/07 17:54:19 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "libft.h"
 
-# include <stdlib.h>
-# include <stdio.h>
-# include <unistd.h>
-# include <string.h>
-# include <strings.h>
-# include <stddef.h>
-# include <ctype.h>
-# include <stdarg.h>
-
-typedef struct s_list
+void	ft_putchar_fd(char c, int fd)
 {
-	void			*content;
-	struct s_list	*next;
-}					t_list;
+	write(fd, &c, 1);
+}
 
-#endif
+/* int	main(void)
+{
+	printf("%s", "ft_putchar_fd('x', 1) =");
+	printf("\n");
+	ft_putchar_fd('x', 1);
+	return (0);
+} */

@@ -1,31 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/16 11:42:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/16 12:13:15 by lbordona         ###   ########.fr       */
+/*   Created: 2022/11/02 15:48:59 by lbordona          #+#    #+#             */
+/*   Updated: 2022/11/07 11:46:46 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "libft.h"
 
-# include <stdlib.h>
-# include <stdio.h>
-# include <unistd.h>
-# include <string.h>
-# include <strings.h>
-# include <stddef.h>
-# include <ctype.h>
-# include <stdarg.h>
-
-typedef struct s_list
+void	*ft_memset(void *s, int c, size_t n)
 {
-	void			*content;
-	struct s_list	*next;
-}					t_list;
+	unsigned char	*ptr;
 
-#endif
+	ptr = (unsigned char *)s;
+	while (n > 0)
+	{
+		*ptr++ = (unsigned char)c;
+		n--;
+	}
+	return (s);
+}
+
+/* int	main(void)
+{
+	char	str[] = "Lucas";
+
+	printf("%s", str);
+	printf("\n");
+	ft_memset(str, '.', 2);
+	printf("%s", str);
+	printf("\n");
+	memset(str, '.', 2);
+	printf("%s", str);
+	printf("\n");
+} */

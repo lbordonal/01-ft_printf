@@ -1,31 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/16 11:42:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/16 12:13:15 by lbordona         ###   ########.fr       */
+/*   Created: 2022/11/09 01:15:52 by lbordona          #+#    #+#             */
+/*   Updated: 2022/11/09 15:42:59 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "libft.h"
 
-# include <stdlib.h>
-# include <stdio.h>
-# include <unistd.h>
-# include <string.h>
-# include <strings.h>
-# include <stddef.h>
-# include <ctype.h>
-# include <stdarg.h>
-
-typedef struct s_list
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	void			*content;
-	struct s_list	*next;
-}					t_list;
+	t_list	*temp;
 
-#endif
+	if (!lst)
+		return ;
+	while (*lst)
+	{
+		temp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = temp;
+	}
+	*lst = NULL;
+}

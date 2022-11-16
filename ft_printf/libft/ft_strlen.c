@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/16 11:42:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/16 12:13:15 by lbordona         ###   ########.fr       */
+/*   Created: 2022/11/02 15:45:07 by lbordona          #+#    #+#             */
+/*   Updated: 2022/11/03 12:30:28 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "libft.h"
 
-# include <stdlib.h>
-# include <stdio.h>
-# include <unistd.h>
-# include <string.h>
-# include <strings.h>
-# include <stddef.h>
-# include <ctype.h>
-# include <stdarg.h>
-
-typedef struct s_list
+size_t	ft_strlen(const char *s)
 {
-	void			*content;
-	struct s_list	*next;
-}					t_list;
+	size_t	len;
 
-#endif
+	len = 0;
+	while (s[len] != '\0')
+		len++;
+	return (len);
+}
+
+/* #include <stdio.h>
+
+int	main(void)
+{
+	char	str[] = "Lucas";
+
+	printf("%d", ft_strlen(str));
+	return (0);
+} */

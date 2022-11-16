@@ -1,31 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/16 11:42:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/16 12:13:15 by lbordona         ###   ########.fr       */
+/*   Created: 2022/11/02 15:07:04 by lbordona          #+#    #+#             */
+/*   Updated: 2022/11/08 14:35:15 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "libft.h"
 
-# include <stdlib.h>
-# include <stdio.h>
-# include <unistd.h>
-# include <string.h>
-# include <strings.h>
-# include <stddef.h>
-# include <ctype.h>
-# include <stdarg.h>
-
-typedef struct s_list
+int	ft_isalpha(int c)
 {
-	void			*content;
-	struct s_list	*next;
-}					t_list;
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+		return (1);
+	else
+		return (0);
+}
 
-#endif
+/* int	main(void)
+{
+	int		a = 'a';
+	int		b = '1';
+
+	printf("%d", ft_isalpha(a));
+	printf("\n");
+	printf("%d", isalpha(a));
+	printf("\n");
+	printf("\n");
+	printf("%d", ft_isalpha(b));
+	printf("\n");
+	printf("%d", isalpha(b));
+	return (0);
+} */
