@@ -6,7 +6,7 @@
 #    By: lbordona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/16 11:42:19 by lbordona          #+#    #+#              #
-#    Updated: 2022/11/16 12:13:14 by lbordona         ###   ########.fr        #
+#    Updated: 2022/11/16 14:29:00 by lbordona         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,15 +20,13 @@ CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 RM = rm -rf
 
-
-
 #Sources:
 
-SRC = *.c
-BONUS = *.c
+SRC = ft_printf.c
+#BONUS = *.c
 
 OBJ = $(SRC:%.c=%.o)
-BONUS_OBJ = $(BONUS:%.c=%.o)
+#BONUS_OBJ = $(BONUS:%.c=%.o)
 
 #Rules:
 
