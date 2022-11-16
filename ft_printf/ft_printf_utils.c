@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:32:04 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/16 18:17:06 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/16 18:32:10 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,30 +104,30 @@ int	ft_putpercent(void)
 }
 
 /*Funcoes auxiliares para ft_putptr_count:*/
-int	ft_ptrlen(uintptr_t number)
+int	ft_ptrlen(uintptr_t n)
 {
 	int	len;
 
 	len = 0;
-	while (number != 0)
+	while (n != 0)
 	{
 		len++;
-		number = number / 16;
+		n = n / 16;
 	}
 	return (len);
 }
 
-void	ft_putptr(uintptr_t number)
+void	ft_putptr(uintptr_t n)
 {
-	if (number >= 16)
+	if (n >= 16)
 	{
-		ft_putptr(number / 16);
-		ft_putptr(number % 16);
+		ft_putptr(n / 16);
+		ft_putptr(n % 16);
 	}
 	else
 	{
-		if (number <= 9)
-		ft_putchar_fd((number + '0'), 1);
-		ft_putchar_fd((number - 10 + 'a'), 1);
+		if (n <= 9)
+		ft_putchar_fd((n + '0'), 1);
+		ft_putchar_fd((n - 10 + 'a'), 1);
 	}
 }

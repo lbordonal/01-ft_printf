@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 11:42:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/16 18:17:02 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/16 18:32:16 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int		ft_putnbr_count(int n);
 int		ft_put_unsignedint_count(unsigned int n);
 int		ft_puthex_count(unsigned int n);
 int		ft_putpercent(void);
-void	ft_putptr(uintptr_t number);
-int		ft_ptrlen(uintptr_t number);
+void	ft_putptr(uintptr_t n);
+int		ft_ptrlen(uintptr_t n);
 
 #endif
