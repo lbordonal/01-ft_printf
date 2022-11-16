@@ -35,7 +35,7 @@ int		ft_putnbr_count(int n);
 int		ft_put_unsignedint_count(unsigned int n);
 int		ft_puthex_count(unsigned int n);
 int		ft_putpercent(void);
-void	ft_putptr(uintptr_t number)
-int		ft_ptrlen(uintptr_t number)
+void	ft_putptr(uintptr_t number);
+int		ft_ptrlen(uintptr_t number);
 
 #endif
