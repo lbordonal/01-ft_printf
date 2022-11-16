@@ -1,0 +1,40 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    MAKEFILE                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lbordona <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/11/16 11:42:19 by lbordona          #+#    #+#              #
+#    Updated: 2022/11/16 11:42:51 by lbordona         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = libftprintf.a
+
+SRC = *.c
+BONUS = *.c
+
+CC = cc
+RM = rm -rf
+CFLAG = -Wall -Wextra -Werror
+AR = ar rcs
+
+OBJ = $(SRC:%.c=%.o)
+BONUS_OBJ = $(BONUS:%.c=%.o)
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+		@$(AR) $(NAME) $(OBJ)
+
+bonus: $(OBJ) $(BONUS_OBJ)
+		@$(AR) $(NAME) $(BONUS_OBJ) $(OBJ)
+
+clean:
+		@$(RM) $(OBJ) $(BONUS_OBJ)
+
+fclean: clean
+		@$(RM) $(NAME)
+
+re: fclean all
