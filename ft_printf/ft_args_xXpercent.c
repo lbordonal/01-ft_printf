@@ -1,40 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_args_xXpercent.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/16 11:48:02 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/17 12:01:42 by lbordona         ###   ########.fr       */
+/*   Created: 2022/11/17 11:58:31 by lbordona          #+#    #+#             */
+/*   Updated: 2022/11/17 12:01:39 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 #include "libft/libft.h"
 
-int	ft_printf(const char *input, ...)
+/* %x or %X: */
+/*int	ft_puthex_count(unsigned int n)
 {
-	int		i;
-	int		bytes;
-	va_list	args;
 
-	i = 0;
-	bytes = 0;
-	va_start(args, input);
-	while (input[i])
-	{
-		if (input[i] == '%')
-		{
-			bytes += check_argument(input[i + 1]);
-			i++;
-		}
-		else
-		{
-			bytes += ft_putchar(input[i]);
-		}
-		i++;
-	}
-	va_end(args);
-	return (bytes);
+} */
+
+/* %%: */
+int	ft_putpercent(void)
+{
+	write(1, "%", 1);
+	return (1);
 }
