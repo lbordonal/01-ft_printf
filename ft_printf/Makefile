@@ -6,7 +6,7 @@
 #    By: lbordona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/16 11:42:19 by lbordona          #+#    #+#              #
-#    Updated: 2022/11/16 14:29:00 by lbordona         ###   ########.fr        #
+#    Updated: 2022/11/17 14:50:43 by lbordona         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,8 @@ RM = rm -rf
 
 #Sources:
 
-SRC = ft_printf.c
+SRC = ft_printf.c ft_printf_utils.c \
+	ft_args_csp.c ft_args_diu.c ft_args_xXpercent.c
 #BONUS = *.c
 
 OBJ = $(SRC:%.c=%.o)
