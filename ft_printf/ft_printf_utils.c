@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:32:04 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/17 12:01:59 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/17 12:09:08 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	check_argument(va_list args, const char type)
 	else if (type == 'u')
 		length += ft_put_unsignedint_count(va_arg(args, unsigned int));
 	else if (type == 'x' || type == 'X')
-		length += ft_puthex_count(va_arg(args, unsigned int), type);
+		length += ft_puthex_count(va_arg(args, unsigned int));
 	else if (type == '%')
 		length += ft_putpercent();
 	return (length);

@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 11:47:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/17 12:00:45 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/17 12:31:19 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,9 +79,8 @@ void	ft_putptr(uintptr_t n)
 	else
 	{
 		if (n <= 9)
-		{
 			ft_putchar_fd((n + '0'), 1);
+		else
 			ft_putchar_fd((n - 10 + 'a'), 1);
-		}
 	}
 }
