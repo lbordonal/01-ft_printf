@@ -6,12 +6,11 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 11:47:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/18 12:08:52 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/18 15:58:32 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
-#include "libft/libft.h"
+#include "ft_printf.h"
 
 /* %c: */
 int	ft_putchar_count(int c)
