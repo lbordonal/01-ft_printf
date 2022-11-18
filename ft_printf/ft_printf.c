@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 11:48:02 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/17 12:08:30 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/18 12:08:49 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,12 @@ int	ft_printf(const char *input, ...)
 	{
 		if (input[i] == '%')
 		{
-			bytes += check_argument(input[i + 1]);
+			bytes += check_argument(args, input[i + 1]);
 			i++;
 		}
 		else
 		{
-			bytes += ft_putchar(input[i]);
+			bytes += ft_putchar_count(input[i]);
 		}
 		i++;
 	}

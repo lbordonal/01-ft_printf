@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 11:58:31 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/17 14:10:06 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/18 12:05:44 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 #include "libft/libft.h"
 
 /* %x or %X: */
-int	ft_puthex_count(unsigned int n)
+/* int	ft_puthex_count(unsigned int n)
 {
 
-}
+} */
 
 /* %%: */
 int	ft_putpercent(void)
