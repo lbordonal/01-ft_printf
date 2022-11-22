@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 15:52:00 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/18 15:57:50 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/22 12:42:11 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,14 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-static int	absolute_value(int nbr)
+int	absolute_value(int nbr)
 {
 	if (nbr < 0)
 		return (-nbr);
 	return (nbr);
 }
 
-static int	ft_digit_count(int nbr)
+int	ft_digit_count(int nbr)
 {
 	int	count;
 

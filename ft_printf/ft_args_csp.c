@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 11:47:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/18 15:58:32 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/22 11:56:36 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,31 +55,31 @@ int	ft_putptr_count(unsigned long long ptr)
 	return (len);
 }
 
-int	ft_ptrlen(uintptr_t n)
+int	ft_ptrlen(uintptr_t ptr)
 {
 	int	len;
 
 	len = 0;
-	while (n != 0)
+	while (ptr != 0)
 	{
 		len++;
-		n = n / 16;
+		ptr = ptr / 16;
 	}
 	return (len);
 }
 
-void	ft_putptr(uintptr_t n)
+void	ft_putptr(uintptr_t ptr)
 {
-	if (n >= 16)
+	if (ptr >= 16)
 	{
-		ft_putptr(n / 16);
-		ft_putptr(n % 16);
+		ft_putptr(ptr / 16);
+		ft_putptr(ptr % 16);
 	}
 	else
 	{
-		if (n <= 9)
-			ft_putchar_fd((n + '0'), 1);
+		if (ptr <= 9)
+			ft_putchar_fd((ptr + '0'), 1);
 		else
-			ft_putchar_fd((n - 10 + 'a'), 1);
+			ft_putchar_fd((ptr - 10 + 'a'), 1);
 	}
 }
