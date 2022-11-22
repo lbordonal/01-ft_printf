@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 11:57:43 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/22 12:06:56 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/22 13:04:33 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	ft_put_unsignedint_count(unsigned int n)
 		len += ft_putstr_count(number);
 		free(number);
 	}
-	return(len);
+	return (len);
 }
 
 int	ft_numlen(unsigned int n)
