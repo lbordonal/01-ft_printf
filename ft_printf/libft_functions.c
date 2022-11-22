@@ -6,11 +6,11 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 15:52:00 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/22 12:42:11 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/22 15:15:03 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

@@ -6,11 +6,11 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 11:57:43 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/22 13:04:33 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/22 15:15:19 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 /* %d or %i: */
 int	ft_putnbr_count(int n)

@@ -6,11 +6,11 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:32:04 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/22 13:02:44 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/22 15:15:11 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 int	check_argument(va_list args, const char type)
 {

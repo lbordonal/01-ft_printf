@@ -6,11 +6,11 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 11:58:31 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/22 13:02:47 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/22 15:15:16 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 /* %x or %X: */
 int	ft_puthex_count(unsigned int n, const char type)

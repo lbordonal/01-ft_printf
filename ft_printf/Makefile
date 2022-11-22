@@ -6,12 +6,12 @@
 #    By: lbordona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/16 11:42:19 by lbordona          #+#    #+#              #
-#    Updated: 2022/11/18 16:05:25 by lbordona         ###   ########.fr        #
+#    Updated: 2022/11/22 15:16:27 by lbordona         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #Variables:
-NAME = ft_printf.a
+NAME = libftprintf.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
