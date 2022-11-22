@@ -29,4 +29,47 @@ int	ft_printf(const char *input, ...);
 ```
 <br />
 
+<h2 align="left">
+	:medal_sports: Mandatory Part
+</h2>
 
+**File conversions:** ```cspdiuxX%```
+
+**`ft_printf.c`**
+* `ft_printf`
+
+**`ft_printf_utils.c`**
+* `check_argument`
+
+**`ft_args_csp.c`**
+* `ft_putchar_count`
+* `ft_putstr_count`
+* `ft_putptr_count`
+* `ft_ptrlen`
+* `ft_putptr`
+
+**`ft_args_diu.c`**
+* `ft_putnbr_count`
+* `ft_put_unsignedint_count`
+* `ft_numlen`
+* `ft_uitoa`
+
+**`ft_args_xXpercent.c`**
+* `ft_puthex_count`
+* `ft_hexlen`
+* `ft_puthex`
+* `ft_putpercent`
+
+**`libft_functions.c`**
+* `ft_putchar_fd`
+* `ft_itoa`
+* `absolute_value`
+* `ft_digit_count`
+<br /><br />
+
+<h2 align="left">
+	:trophy: Bonus Part
+</h2>
+
+
+</br>
