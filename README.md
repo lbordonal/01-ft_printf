@@ -18,3 +18,15 @@ This repository contains code developed at 42 Porto for ft_printf Project, from 
 </h2>
 <a href="https://github.com/lbordonal/01-ft_printf/blob/main/Subject/en.subject.pdf">Click here</a> for the subject of this project.
 <br /><br />
+
+<h2 align="left">
+	:zap: Function Prototype
+</h2>
+
+```c
+int	ft_printf(const char *input, ...);
+
+```
+<br />
+
+
