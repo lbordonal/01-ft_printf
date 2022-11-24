@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 11:47:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/22 15:15:26 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/24 10:29:17 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 /* %c: */
 int	ft_putchar_count(int c)
 {
-	write(1, &c, 1);
-	return (1);
+	return (write(1, &c, 1));
 }
 
 /* %s: */
@@ -26,10 +25,7 @@ int	ft_putstr_count(char *str)
 
 	i = 0;
 	if (str == NULL)
-	{
-		write(1, "null", 4);
-		return (4);
-	}
+		return (write(1, "(null)", 6));
 	while (str[i])
 	{
 		write(1, &str[i], 1);
@@ -44,11 +40,11 @@ int	ft_putptr_count(unsigned long long ptr)
 	int	len;
 
 	len = 0;
-	len += write(1, "0x", 2);
 	if (ptr == 0)
-		len += write(1, "0", 2);
+		len += write(1, "(nil)", 5);
 	else
 	{
+		len += write(1, "0x", 2);
 		ft_putptr(ptr);
 		len += ft_ptrlen(ptr);
 	}
