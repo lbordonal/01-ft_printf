@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 11:58:31 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/22 15:15:16 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/30 12:21:40 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,6 @@ void	ft_puthex(unsigned int n, const char type)
 				ft_putchar_fd((n - 10 + 'A'), 1);
 		}
 	}
-
 }
 
 /* %%: */
