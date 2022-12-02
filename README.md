@@ -36,33 +36,41 @@ int	ft_printf(const char *input, ...);
 **File conversions:** ```cspdiuxX%```
 
 **`ft_printf.c`**
-* `ft_printf`
+* `ft_printf` - main function.
 
 **`ft_printf_utils.c`**
-* `check_argument`
+* `check_argument` - verify argument (char, string, pointer, decimal, integer, unsigned decimal, hexadecimal and %).
 
 **`ft_args_csp.c`**
-* `ft_putchar_count`
-* `ft_putstr_count`
-* `ft_putptr_count`
-* `ft_ptrlen`
-* `ft_putptr`
+* `ft_putchar_count` - char ``` %c ```.
+* `ft_putstr_count` - string  ``` %s ```.
+* `ft_putptr_count` - pointer ``` %p ```.
+* `ft_ptrlen` - return pointer length.
+* `ft_putptr` - print pointer in hexadecimal.
 
 **`ft_args_diu.c`**
-* `ft_putnbr_count`
-* `ft_put_unsignedint_count`
-* `ft_numlen`
-* `ft_uitoa`
+* `ft_putnbr_count` - decimal ``` %d ``` and integer ``` %i ```.
+* `ft_put_unsignedint_count` - unsigned decimal ``` %u ```.
+* `ft_numlen` - return unsigned int length.
+* `ft_uitoa` - ``` ft_itoa ``` function for unsigned int.
 
 **`ft_args_xXpercent.c`**
-* `ft_puthex_count`
-* `ft_hexlen`
-* `ft_puthex`
-* `ft_putpercent`
+* `ft_puthex_count` - hexadecimal lowercase ``` %x ``` and hexadecimal uppercase ``` %X ```.
+* `ft_hexlen` - return hexadecimal length.
+* `ft_puthex` - print hexadecimal.
+* `ft_putpercent` - percent ``` %% ```.
 
 **`libft_functions.c`**
-* `ft_putchar_fd`
-* `ft_itoa`
-* `absolute_value`
-* `ft_digit_count`
+* `ft_putchar_fd` - outputs the character to the given file descriptor.
+* `ft_itoa` - allocates and returns a string representing the integer received as an argument.
+* `absolute_value` - aux function to ``` ft_itoa ```.
+* `ft_digit_count` - aux function to ``` ft_itoa ```.
 <br /><br />
+
+<h2 align="left">
+	:memo: Tester
+</h2>
+
+- [printfTester][1]
+
+[1]: https://github.com/Tripouille/printfTester
