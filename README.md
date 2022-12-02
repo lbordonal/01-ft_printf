@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-	<img src="https://img.shields.io/badge/score-not%20submitted-red" />
+	<img src="https://img.shields.io/badge/score-100%20%2F%20100-success" />
 	<img src="https://img.shields.io/github/languages/code-size/lbordonal/01-ft_printf" />
 	<img src="https://img.shields.io/github/languages/count/lbordonal/01-ft_printf" />
 	<img src="https://img.shields.io/github/languages/top/lbordonal/01-ft_printf" />
@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-This repository contains code developed at 42 Porto for ft_printf Project, from 16/11/22 to ...
+This repository contains code developed at 42 Porto for ft_printf Project, from 16/11/22 to 02/12/22.
 
 <h2 align="left">
 	 :notebook: Subject
@@ -66,10 +66,3 @@ int	ft_printf(const char *input, ...);
 * `absolute_value`
 * `ft_digit_count`
 <br /><br />
-
-<h2 align="left">
-	:trophy: Bonus Part
-</h2>
-
-
-</br>
