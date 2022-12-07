@@ -74,3 +74,10 @@ int	ft_printf(const char *input, ...);
 - [printfTester][1]
 
 [1]: https://github.com/Tripouille/printfTester
+
+<br />
+<br />
+<hr/>
+<p align="center">
+This work is published under the terms of <a href="https://github.com/gcamerli/42unlicense">42 Unlicense</a>. 
+</p>
