@@ -23,10 +23,6 @@ This repository contains code developed at 42 Porto for ft_printf Project, from 
 	:zap: Function Prototype
 </h2>
 <p align="center">
-<img src="https://carbon.now.sh/?bg=rgba%28255%2C255%2C255%2C0%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=1x&wm=false&code=int%2509ft_printf%28const%2520char%2520*input%252C%2520...%29%253B">
-</p>
-
-<p align="left">
   <img src="https://github.com/lbordonal/lbordonal/blob/main/.images/ft_printf_function.png">
 </p>
 
