@@ -13,7 +13,8 @@
 <p align="center">
 This repository contains code developed at 42 Porto for ft_printf Project, from 16/11/22 to 30/11/22.
 
-<h2 align="left">
+<img src="https://github.com/lbordonal/lbordonal/blob/main/.42_badges/ft_printfn.png" align="right" />
+<h2>
 	 :notebook: Subject
 </h2>
 <a href="https://github.com/lbordonal/01-ft_printf/blob/main/Subject/en.subject.pdf">Click here</a> for the subject of this project.
