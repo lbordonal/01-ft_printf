@@ -22,11 +22,11 @@ This repository contains code developed at 42 Porto for ft_printf Project, from 
 <h2 align="left">
 	:zap: Function Prototype
 </h2>
-<p align="center">
+<p align="left">
   <img src="https://github.com/lbordonal/lbordonal/blob/main/.images/ft_printf_function.png">
 </p>
 
-<br />
+
 
 <h2 align="left">
 	:medal_sports: Mandatory Part
